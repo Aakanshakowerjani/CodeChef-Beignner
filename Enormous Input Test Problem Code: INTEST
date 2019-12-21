@@ -1,0 +1,9 @@
+l=list(map(int,input().split()))
+n=l[0]
+k=l[1]
+c=0
+for i in range(n):
+    a=int(input())
+    if a%k==0:
+        c+=1
+print(c)
