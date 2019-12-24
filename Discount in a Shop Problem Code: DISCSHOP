@@ -1,0 +1,17 @@
+# cook your dish here
+t = int(input())
+while (t):
+    t -= 1
+    s=input()
+    if len(s) == 1:
+        print(int(s))
+    else:
+        for i in range(len(s)):
+            if i+1<len(s):
+                if int(s[i]) > int(s[i+1]):
+                    s=int(s.replace(s[i],'',1))
+                    print(s)
+                    break
+            else:
+                print(s[:-1])
+                break
